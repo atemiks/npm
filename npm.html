@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPM Start Page</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper.min.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="swiper-npm swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h1 class="display-1 text-center" >Hello NPM!</h1>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <p>NPM is</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            let swiperNPM = new Swiper('.swiper-npm', {
+                slidesPerView: '1',
+            });
+        });
+    </script>
+</body>
+</html>
